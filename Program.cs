@@ -43,7 +43,38 @@ public class LoopCalculation
             {
                 Console.WriteLine("Final total: {0}", sum);
             }
-
         }
+
+        // Demonstrate a condition-based loop
+        // - Ask the user to enter an integer value (-1 to quit)
+        // - Keep a running sum of the values
+        // - Keep a count of how many values the user has entered
+        // - Print the running total after each entry
+        // - Print the final sum of all values entered
+        // - Print a count of the values entered
+        Console.WriteLine("\nAdding integers entered: ");
+        string? val = null;
+        int inVal = 0;
+        int counter = 0;
+        sum = 0;
+
+        do
+        {
+            Console.Write("Enter an integer value (-1 to stop): ");
+            val = Console.ReadLine();
+            inVal = Convert.ToInt32(val);
+
+            if (inVal == -1)
+            {
+                break;
+            }
+
+            counter++;
+            sum += inVal;
+            Console.WriteLine("Total so far: {0}", sum);
+        } while (true);
+
+        Console.WriteLine("Final total: {0}", sum);
+        Console.WriteLine("Count of values entered: {0}", counter);
     }
 }
