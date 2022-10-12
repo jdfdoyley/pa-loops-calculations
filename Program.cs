@@ -25,6 +25,7 @@ public class LoopCalculation
 {
     static void Main(string[] args)
     {
-
+        // Print a header line
+        Console.WriteLine("\nJason D'Oyley - Week 2 PA Loops Calculations\n");
     }
 }
