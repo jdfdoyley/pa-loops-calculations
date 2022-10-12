@@ -27,5 +27,23 @@ public class LoopCalculation
     {
         // Print a header line
         Console.WriteLine("\nJason D'Oyley - Week 2 PA Loops Calculations\n");
+
+        // Demonstrate a counter-controlled loop
+        // - Calculate the sum of the integers from 1 to 10
+        // - Print the running total
+        // - Print the final total
+        Console.WriteLine("Calculate the sum of integers 1 - 10:");
+        int sum = 0;
+        for (int i = 1; i <= 10; i++)
+        {
+            sum += i;
+            Console.WriteLine("Total so far: {0}", sum);
+
+            if (i == 10)
+            {
+                Console.WriteLine("Final total: {0}", sum);
+            }
+
+        }
     }
 }
